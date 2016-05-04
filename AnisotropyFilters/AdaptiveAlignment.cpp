@@ -531,7 +531,7 @@ bool AdaptiveAlignment::find_interface_edges()
 
 void AdaptiveAlignment::estimate_shifts_from_images(std::vector<float>& xneedshifts, std::vector<float>& yneedshifts)
 {
-	DataContainer::Pointer m = getDataContainerArray()->getDataContainer(getImageDataArrayPath());
+	DataContainer::Pointer m = getDataContainerArray()->getDataContainer(getDataContainerName());
 
 	notifyStatusMessage(getHumanLabel(), "Estimate shifts from images");
 
